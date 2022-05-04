@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #f609ee, #0dcbcc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 350px;
+    height: 450px;
+    border-radius: 8px;
+    background-color: #ffffff13;
+    padding: 16px;
+    font-family: sans-serif;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+}
+.card h1{
+    text-align: center;
+    color: #f609ee;
+    text-transform: uppercase;
+    animation: heading 2.5s linear infinite alternate ;
+}
+@keyframes heading {
+    to{
+        color: #f609ee;
+        text-shadow: 0 5px 15px #f609ee;
+    }
+    
+}
+
+.bg_1{
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #ff00f7, #0dcbcc);
+    opacity: 0.5;
+    animation-name: bg_1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes bg_1 {
+    to{
+        top: 24%;
+        opacity: .6;
+    }
+    
+}
+
+.bg_2{
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #ff00f7, #0dcbcc);
+    opacity: 0.5;
+    animation-name: bg_2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear; 
+}
+@keyframes bg_2 {
+    to{
+        top: 50%;
+        opacity: .6;
+    }
+    
+}
+.card input{
+    display: block;
+    width: 100%;
+    height: 34px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin: 24px 0;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    text-indent: 10px;
+    color: #ddd;
+}
+.card input::placeholder{
+    color: #ddd;
+}
+.card button{
+    width: 100%;
+    height: 34px;
+    border-radius: 6px;
+    background: linear-gradient(-45deg, #ff00f7, #0dcbcc);
+    border: none;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+.rect{
+    width: 120px;
+    height: 120px;
+    margin: 40px auto;
+    position: relative;
+}
+.rect::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f609ee;
+    box-shadow: 0 0 5px #f609ee, 
+    0 0 10px #f609ee,
+    inset 0 0 5px #f609ee;
+    animation: before 15s linear infinite alternate;
+    border-radius: 10px;
+}
+@keyframes before {
+    to{
+        transform: rotate(360deg);
+    }
+}
+.rect::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f609ee;
+    box-shadow: 0 0 5px #f609ee, 
+    0 0 10px #f609ee,
+    inset 0 0 5px #f609ee;
+    animation: after 10s linear infinite alternate-reverse;
+    border-radius: 10px;
+
+}
+@keyframes after {
+    to{
+        transform: rotate(360deg);
+    }
+}
+.circle_1{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #410dff;
+    opacity: 0.15;
+    transform: scale(0);
+    animation: circle_1 2s linear infinite;
+
+}
+@keyframes circle_1 {
+    to{
+        transform: scale(1);
+        opacity: 0;
+    }
+}

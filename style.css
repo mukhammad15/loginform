@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .box{
+     width: 200px;
+     height: 200px;
+     background-color: aqua;
+     /* nomi */
+     animation-name: title;
+     /* davomiyligi */
+     animation-duration: 2s;
+     /* kutish vaqti */
+     animation-delay: 0s;
+     /* holati */
+     animation-timing-function: linear;
+
+     animation-fill-mode: forwards;
+    /* infinite - cheksiz */
+    animation-iteration-count: 16;
+    /*     animation-direction: alternate;
+ qaytish yonalish chiroyli qaytish */
+
+     animation-direction: alternate;
+
+ }
+
+/* @keyframes title {
+    0%{}
+    25%{
+        background-color: blue;
+        transform: translateX(300px);
+        border-radius: 10px;
+    }
+    50%{
+        background-color: brown;
+        transform: translateX(300px) translateY(300px) rotate(360deg);
+        border-radius: 20px;
+    }
+    75%{
+        background-color: green;
+        transform: translateX(0px) translateY(300px);
+        border-radius: 30px;
+    }
+    100%{
+        background-color: gold;
+        transform: translateX(0px) translateY(0px);
+        border-radius: 50%;
+    }
+} */
+
+  @keyframes title {
+    from{
+        background-color: blue;
+    }
+    to{
+        background-color: red;
+        margin-left: 300px;
+        border-radius: 50%;
+    }
+ } 
